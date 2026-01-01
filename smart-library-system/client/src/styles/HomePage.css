@@ -399,7 +399,7 @@
 .content-grid {
   display: grid;
   gap: var(--space-8);
-  align-items: start;
+  align-items: stretch;
 }
 
 /* Mobile: Single Column */
@@ -443,6 +443,7 @@
   .form-section {
     position: sticky;
     top: 120px;
+    margin-top: 56px;
   }
 }
 

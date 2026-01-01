@@ -104,7 +104,7 @@ const HomePage = () => {
         } finally {
             setIsLoading(false);
         }
-    }, [getAuthHeaders]);
+    }, [user, token, getAuthHeaders]);
 
     /**
      * Fetch books on mount
@@ -508,12 +508,6 @@ const HomePage = () => {
                             {user ? 'Manage your personal book collection' : 'Browse as guest or login to save your collection'}
                         </p>
                     </div>
-                    {user && (
-                        <Link to="/history" className="history-button">
-                            <FaHistory />
-                            <span>View History</span>
-                        </Link>
-                    )}
                 </div>
             </div>
 

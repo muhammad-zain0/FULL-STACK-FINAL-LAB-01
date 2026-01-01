@@ -1,0 +1,148 @@
+# =============================================================================
+# SMART LIBRARY SYSTEM - Git Ignore Configuration
+# =============================================================================
+# This file specifies patterns for files and directories that Git should ignore.
+# These are typically generated files, dependencies, and sensitive configuration.
+# =============================================================================
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# Node.js dependencies (package managers create these directories)
+node_modules/
+.pnp/
+.pnp.js
+
+# =============================================================================
+# ENVIRONMENT & SECRETS
+# =============================================================================
+# Environment variable files (may contain sensitive data like database credentials)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# =============================================================================
+# BUILD OUTPUT
+# =============================================================================
+# Production build directories
+/client/dist/
+/client/build/
+/server/dist/
+
+# =============================================================================
+# LOGS & DEBUGGING
+# =============================================================================
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+Desktop.ini
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# =============================================================================
+# IDE & EDITOR FILES
+# =============================================================================
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# TESTING
+# =============================================================================
+# Test coverage directories
+coverage/
+*.lcov
+.nyc_output/
+
+# =============================================================================
+# PACKAGE MANAGER LOCKS (optional - uncomment if you want to ignore)
+# =============================================================================
+# Uncomment these if you don't want to track lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+tmp/
+temp/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+
+# Optional REPL history
+.node_repl_history
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+# MongoDB data directory (if stored locally in project)
+/data/db/
+
+# Uploaded files directory (if applicable)
+/uploads/
+
+# =============================================================================
+# DOCUMENTATION BUILD
+# =============================================================================
+# Generated documentation
+docs/_build/

@@ -39,9 +39,7 @@ const EditBookModal = ({
         title: '',
         author: '',
         isbn: '',
-        publishedYear: '',
-        genre: '',
-        description: ''
+        publishedYear: ''
     });
 
     // Populate form when book changes
@@ -51,9 +49,7 @@ const EditBookModal = ({
                 title: book.title || '',
                 author: book.author || '',
                 isbn: book.isbn || '',
-                publishedYear: book.publishedYear || '',
-                genre: book.genre || '',
-                description: book.description || ''
+                publishedYear: book.publishedYear || ''
             });
         }
     }, [book]);
@@ -147,30 +143,6 @@ const EditBookModal = ({
                                 onChange={handleChange}
                                 min="1000"
                                 max={new Date().getFullYear()}
-                                disabled={isLoading}
-                            />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="edit-genre">Genre</label>
-                            <input
-                                type="text"
-                                id="edit-genre"
-                                name="genre"
-                                value={formData.genre}
-                                onChange={handleChange}
-                                disabled={isLoading}
-                            />
-                        </div>
-
-                        <div className="form-group full-width">
-                            <label htmlFor="edit-description">Description</label>
-                            <textarea
-                                id="edit-description"
-                                name="description"
-                                value={formData.description}
-                                onChange={handleChange}
-                                rows="3"
                                 disabled={isLoading}
                             />
                         </div>
